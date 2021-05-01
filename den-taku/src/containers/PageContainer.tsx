@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from '../App';
 import './PageContainer.css'
+import SelfContainer from './SelfContainer';
 
 type StateProps = Readonly<{
   //
@@ -41,7 +42,7 @@ const PageContainer: React.FC<PageContainerProps> = ({})  => {
           <Col sm={10}>
             <Tab.Content>
               <Tab.Pane eventKey="self">
-                <App />
+                <SelfContainer />
               </Tab.Pane>
               <Tab.Pane eventKey="tech">
                 <App />

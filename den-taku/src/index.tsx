@@ -16,8 +16,14 @@ ReactDOM.render(
 function tick() {
   ReactDOM.render(
     <React.StrictMode>
-      <TopContainer />
-      <PageContainer />
+      <div className="Home">
+        <div className="Home-header">
+          <TopContainer />
+        </div>
+        <div className="Home-body">
+          <PageContainer />
+        </div>
+      </div>
     </React.StrictMode>,
     document.getElementById('root')
   )
