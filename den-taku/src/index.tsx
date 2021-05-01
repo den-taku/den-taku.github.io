@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import PageContainer from './containers/PageContainer';
+import TopContainer from './containers/TopContainer';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -26,6 +27,7 @@ function tick() {
   ReactDOM.render(
     <React.StrictMode>
       <Tick />
+      <TopContainer />
       <PageContainer />
     </React.StrictMode>,
     document.getElementById('root')
