@@ -20,7 +20,6 @@ type PageContainerProps = StateProps & OwnProps;
 const PageContainer: React.FC<PageContainerProps> = ({})  => {
   return (
     <>
-      <h1>Hello</h1>
       <Tab.Container id="left-tabs-example" defaultActiveKey="self"> 
         <Row>
           <Col sm={2}>

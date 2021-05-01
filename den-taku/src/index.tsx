@@ -13,20 +13,9 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-const Tick = () => {
-  return (
-    <>
-      <div>
-        <h1>It is {new Date().toLocaleTimeString()}.</h1>
-      </div>
-    </>
-  )
-}
-
 function tick() {
   ReactDOM.render(
     <React.StrictMode>
-      <Tick />
       <TopContainer />
       <PageContainer />
     </React.StrictMode>,
