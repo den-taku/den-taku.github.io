@@ -19,6 +19,7 @@ type StateProps = Readonly<{
                 <br></br>
                 <h1>Nothing!!!</h1>
                 <h2>Wait, please!!</h2>
+                <h4>or, please see <a href="https://zenn.dev/dentaku">Zenn</a></h4>
           </header>
         </div>
     );
