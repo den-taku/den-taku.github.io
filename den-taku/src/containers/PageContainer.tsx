@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Tabs from 'react-bootstrap/Tabs';
+import React from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from '../App';
+import './PageContainer.css'
 
 type StateProps = Readonly<{
   //
@@ -25,22 +23,28 @@ const PageContainer: React.FC<PageContainerProps> = ({})  => {
       <h1>Hello</h1>
       <Tab.Container id="left-tabs-example" defaultActiveKey="self"> 
         <Row>
-          <Col sm={3}>
+          <Col sm={2}>
             <Nav variant="pills" className="flex-column">
               <Nav.Item>
-                <Nav.Link eventKey="self">Self Introduction</Nav.Link>
+                <Nav.Link eventKey="self" >Self Introduction</Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="tech">Tech and Knowledge</Nav.Link>
               </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="blog">Blog</Nav.Link>
+              </Nav.Item>
             </Nav>
           </Col>
-          <Col sm={9}>
+          <Col sm={10}>
             <Tab.Content>
               <Tab.Pane eventKey="self">
                 <App />
               </Tab.Pane>
               <Tab.Pane eventKey="tech">
+                <App />
+              </Tab.Pane>
+              <Tab.Pane eventKey="blog">
                 <App />
               </Tab.Pane>
             </Tab.Content>
