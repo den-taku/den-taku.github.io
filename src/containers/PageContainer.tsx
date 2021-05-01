@@ -9,6 +9,7 @@ import './PageContainer.css'
 import SelfContainer from './SelfContainer';
 import TechContainer from './TechContainer';
 import BlogContainer from './BlogContainer';
+import ContactContainer from './ContactContainer';
 
 type StateProps = Readonly<{
   //
@@ -53,7 +54,7 @@ const PageContainer: React.FC<PageContainerProps> = ({})  => {
                 <BlogContainer />
               </Tab.Pane>
               <Tab.Pane eventKey="contact">
-                <App />
+                <ContactContainer />
               </Tab.Pane>
             </Tab.Content>
           </Col>
