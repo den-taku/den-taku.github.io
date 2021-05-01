@@ -1,0 +1,12 @@
+.Tech-header {
+    background-color: rgb(2, 37, 107);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+  
+.Tech-link {
+  color: #61dafb;
+}

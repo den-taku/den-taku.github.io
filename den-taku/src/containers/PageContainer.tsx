@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from '../App';
 import './PageContainer.css'
 import SelfContainer from './SelfContainer';
+import TechContainer from './TechContainer';
 import BlogContainer from './BlogContainer';
 
 type StateProps = Readonly<{
@@ -46,7 +47,7 @@ const PageContainer: React.FC<PageContainerProps> = ({})  => {
                 <SelfContainer />
               </Tab.Pane>
               <Tab.Pane eventKey="tech">
-                <App />
+                <TechContainer />
               </Tab.Pane>
               <Tab.Pane eventKey="blog">
                 <BlogContainer />
