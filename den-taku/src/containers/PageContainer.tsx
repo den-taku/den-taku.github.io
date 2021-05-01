@@ -34,6 +34,9 @@ const PageContainer: React.FC<PageContainerProps> = ({})  => {
               <Nav.Item>
                 <Nav.Link eventKey="blog">Blog</Nav.Link>
               </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="contact">Contact</Nav.Link>
+              </Nav.Item>
             </Nav>
           </Col>
           <Col sm={10}>
@@ -45,6 +48,9 @@ const PageContainer: React.FC<PageContainerProps> = ({})  => {
                 <App />
               </Tab.Pane>
               <Tab.Pane eventKey="blog">
+                <App />
+              </Tab.Pane>
+              <Tab.Pane eventKey="contact">
                 <App />
               </Tab.Pane>
             </Tab.Content>
