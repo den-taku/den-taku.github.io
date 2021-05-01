@@ -1,38 +1,52 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
+import Tabs from 'react-bootstrap/Tabs';
+import Tab from 'react-bootstrap/Tab';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Nav from 'react-bootstrap/Nav';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-// const choicedPage = 
-export enum Page {
-  Self, Tech, Blog, Contact
-}
+import App from '../App';
 
 type StateProps = Readonly<{
   //
 }>;
 
 type OwnProps = Readonly<{
-  page: Page
+  //
 }>;
 
 type PageContainerProps = StateProps & OwnProps;
 
-const PageContainer: React.FC<PageContainerProps> = ({ page })  => {
-  const [current_page, setState] = useState(Page.Self);
-  // const handlePage = React.useCallback((even: React.ChangeEvent<HTMLInputElement>) => {
-  //   setState(event?.target.value)
-  // }, [setState]);
+const PageContainer: React.FC<PageContainerProps> = ({})  => {
   return (
     <>
       <h1>Hello</h1>
-      <h1>Now page is {page}</h1>
-      <ButtonGroup>
-        <Button variant="info" size="lg">Self Introduction</Button>
-        <Button variant="success" size="lg">Tech and Knowledge</Button>
-        <Button variant="warning" size="lg">Blog</Button>
-        <Button variant="dark" size="lg">Contact</Button>
-      </ButtonGroup>
+      <Tab.Container id="left-tabs-example" defaultActiveKey="self"> 
+        <Row>
+          <Col sm={3}>
+            <Nav variant="pills" className="flex-column">
+              <Nav.Item>
+                <Nav.Link eventKey="self">Self Introduction</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="tech">Tech and Knowledge</Nav.Link>
+              </Nav.Item>
+            </Nav>
+          </Col>
+          <Col sm={9}>
+            <Tab.Content>
+              <Tab.Pane eventKey="self">
+                <App />
+              </Tab.Pane>
+              <Tab.Pane eventKey="tech">
+                <App />
+              </Tab.Pane>
+            </Tab.Content>
+          </Col>
+        </Row>
+       </Tab.Container>
     </>
   );
 }

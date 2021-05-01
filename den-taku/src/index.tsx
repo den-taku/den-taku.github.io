@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import PageContainer, { Page } from './containers/PageContainer';
+import PageContainer from './containers/PageContainer';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -26,7 +26,7 @@ function tick() {
   ReactDOM.render(
     <React.StrictMode>
       <Tick />
-      <PageContainer page={Page.Self}/>
+      <PageContainer />
     </React.StrictMode>,
     document.getElementById('root')
   )
