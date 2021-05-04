@@ -13,7 +13,7 @@ import CG from '../components/skills/CG';
 import Database from '../components/skills/Database';
 import Geometric from '../components/skills/Geometric';
 import Graph from '../components/skills/Graph';
-import Algebra from '../components/skills/CG';
+import Algebra from '../components/skills/Algebra';
 import Security from '../components/skills/Security';
 import SoftwareEng from '../components/skills/SoftwareEng';
 import Logic from '../components/skills/Logic';
@@ -51,13 +51,13 @@ const SkillContainer: React.FC<SkillContainerProps> = ({})  => {
               <Button variant="Light" size="lg" disabled block>よくわかる</Button>
                 <LogicCircuit variant="info"/>
                 <Architecture variant="info"/>
-                <Compiler variant="info"/>
                 <Optimization variant="info"/>
             </Col>
             <Col sm={3}>
               <Button variant="Light" size="lg" disabled block>わかる</Button>
                 <ProgrammingLanguage variant="primary"/>
                 <OperatingSystem variant="primary"/>
+                <Compiler variant="primary"/>
                 <Cmos variant="primary"/>
                 <Electric variant="primary"/>
                 <DataAlgorithm variant="primary"/>
