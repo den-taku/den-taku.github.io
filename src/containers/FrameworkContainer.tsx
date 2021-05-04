@@ -21,8 +21,8 @@ type StateProps = Readonly<{
               <ul>
                   <li>React</li>
                   <li>Redux</li>
-                  <li>LaTex</li>
-                  <li><a href="https://crates.io">crates.io</a>のクレートにはいつもお世話になっています．</li>
+                  <li>LaTeX</li>
+                  <li>他にも<a href="https://crates.io">crates.io</a>のクレートにはいつもお世話になっています．</li>
               </ul>
               <h5>昔使ってた</h5>
               <ul>
