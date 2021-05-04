@@ -4,9 +4,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import App from '../App';
 import './PageContainer.css'
 import SelfContainer from './SelfContainer';
+import HomeContainer from './HomeContainer';
 import TechContainer from './TechContainer';
 import BlogContainer from './BlogContainer';
 import ContactContainer from './ContactContainer';
@@ -24,10 +24,13 @@ type PageContainerProps = StateProps & OwnProps;
 const PageContainer: React.FC<PageContainerProps> = ({})  => {
   return (
     <>
-      <Tab.Container id="left-tabs-example" defaultActiveKey="self"> 
+      <Tab.Container id="left-tabs-example" defaultActiveKey="home"> 
         <Row>
           <Col sm={2}>
             <Nav variant="pills" className="flex-column">
+            <Nav.Item>
+                <Nav.Link eventKey="home" >Home</Nav.Link>
+              </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="self" >Self Introduction</Nav.Link>
               </Nav.Item>
@@ -44,6 +47,9 @@ const PageContainer: React.FC<PageContainerProps> = ({})  => {
           </Col>
           <Col sm={10}>
             <Tab.Content>
+            <Tab.Pane eventKey="home">
+                <HomeContainer />
+              </Tab.Pane>
               <Tab.Pane eventKey="self">
                 <SelfContainer />
               </Tab.Pane>
