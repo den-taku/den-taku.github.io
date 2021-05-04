@@ -13,7 +13,7 @@ const ML: React.FC<MLProps> = ({variant}) => {
             <Popover.Content>
                 教師あり学習，教師なし学習，強化学習，深層学習および深層強化学習の基礎がわかります．講義および共立出版様より恵贈いただいた
                 <a href="https://www.kyoritsu-pub.co.jp/bookdetail/9784320124721">深層強化学習入門</a>で学びました．
-                個人的には専門的に学びたいと思っておりません．
+                実はあまり食指が動かない分野だったりします．
             </Popover.Content>
         </Popover>
     );
