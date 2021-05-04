@@ -11,6 +11,12 @@ import ProgrammingLanguage from '../components/skills/ProgrammingLanguage';
 import Cmos from '../components/skills/Cmos';
 import Set from '../components/skills/Set';
 import CG from '../components/skills/CG';
+import Database from '../components/skills/Database';
+import Geometric from '../components/skills/Geometric';
+import Graph from '../components/skills/Graph';
+import Algebra from '../components/skills/CG';
+import Security from '../components/skills/Security';
+import SoftwareEng from '../components/skills/SoftwareEng';
 import Logic from '../components/skills/Logic';
 import Parallel from '../components/skills/Parallel';
 import Network from '../components/skills/Network';
@@ -55,6 +61,7 @@ type StateProps = Readonly<{
                     <Cmos variant="primary"/>
                     <Electric variant="primary"/>
                     <DataAlgorithm variant="primary"/>
+                    <Graph variant="primary"/>
                     <ComputationTheory variant="primary"/>
                     <Logic variant="primary"/>
                     <ML variant="primary"/>
@@ -73,6 +80,11 @@ type StateProps = Readonly<{
                 </Col>
                 <Col sm={3}>
                   <Button variant="Light" size="lg" disabled block>まだわからない</Button>
+                    <SoftwareEng variant="secondary"/>
+                    <Security variant="secondary"/>
+                    <Algebra variant="secondary"/>
+                    <Geometric variant="secondary"/>
+                    <Database variant="secondary"/>
                 </Col>
               </Row>
           </header>

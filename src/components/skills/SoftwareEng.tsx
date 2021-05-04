@@ -1,26 +1,25 @@
 import React from 'react';
 import { Button, OverlayTrigger, Popover } from 'react-bootstrap';
 
-type NetworkProps = Readonly<{
+type SoftwareEngProps = Readonly<{
     variant: string
 }>;
 
-const Network: React.FC<NetworkProps> = ({variant}) => {
+const SoftwareEng: React.FC<SoftwareEngProps> = ({variant}) => {
     const popover = (
         <Popover id="popover-basic">
             <Popover.Title as="h3">
-                履修中</Popover.Title>
+                停滞中</Popover.Title>
             <Popover.Content>
-                恒例の潜りです．
-                回路的な話は少しだけわかります(サンプリング定理とか)．
+                潜らせていただいた講義の動画があるのでまずは視聴したいです．
             </Popover.Content>
         </Popover>
     );
     return (
         <OverlayTrigger trigger="click" placement="right" overlay={popover}>
-            <Button variant={variant} size="lg" block>ネットワーク</Button>
+            <Button variant={variant} size="lg" block>ソフトウェア工学</Button>
         </OverlayTrigger>
     )
 }
 
-export default Network;
+export default SoftwareEng;

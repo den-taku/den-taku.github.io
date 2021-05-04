@@ -1,26 +1,25 @@
 import React from 'react';
 import { Button, OverlayTrigger, Popover } from 'react-bootstrap';
 
-type NetworkProps = Readonly<{
+type GeometricProps = Readonly<{
     variant: string
 }>;
 
-const Network: React.FC<NetworkProps> = ({variant}) => {
+const Geometric: React.FC<GeometricProps> = ({variant}) => {
     const popover = (
         <Popover id="popover-basic">
             <Popover.Title as="h3">
-                履修中</Popover.Title>
+                停滞中</Popover.Title>
             <Popover.Content>
-                恒例の潜りです．
-                回路的な話は少しだけわかります(サンプリング定理とか)．
+                代数学と関連の深い分野に興味があるのと，プログラム意味論の幾何学的意味に興味があります．
             </Popover.Content>
         </Popover>
     );
     return (
         <OverlayTrigger trigger="click" placement="right" overlay={popover}>
-            <Button variant={variant} size="lg" block>ネットワーク</Button>
+            <Button variant={variant} size="lg" block>幾何学</Button>
         </OverlayTrigger>
     )
 }
 
-export default Network;
+export default Geometric;
