@@ -9,12 +9,17 @@ import Compiler from '../components/skills/Compiler';
 import OperatingSystem from '../components/skills/OperatingSystem';
 import ProgrammingLanguage from '../components/skills/ProgrammingLanguage';
 import Cmos from '../components/skills/Cmos';
+import Set from '../components/skills/Set';
+import CG from '../components/skills/CG';
 import Logic from '../components/skills/Logic';
+import Parallel from '../components/skills/Parallel';
+import Network from '../components/skills/Network';
 import Embedded from '../components/skills/Embedded';
 import NumericCalculation from '../components/skills/NumericCalculation';
 import Optimization from '../components/skills/Optimization';
 import ML from '../components/skills/Ml';
 import SemanticsLambda from '../components/skills/SemanticsLambda';
+import SemanticsCategory from '../components/skills/SemanticsCategory';
 import ImformationTheory from '../components/skills/ImformationTheory';
 import ComputationTheory from '../components/skills/ComputationTheory';
 import DataAlgorithm from '../components/skills/DataAlgorithm';
@@ -60,6 +65,11 @@ type StateProps = Readonly<{
                 </Col>
                 <Col sm={3}>
                   <Button variant="Light" size="lg" disabled block>勉強中</Button>
+                    <SemanticsCategory variant="danger"/>
+                    <Parallel variant="danger"/>
+                    <Network variant="danger"/>
+                    <Set variant="danger"/>
+                    <CG variant="danger"/>
                 </Col>
                 <Col sm={3}>
                   <Button variant="Light" size="lg" disabled block>まだわからない</Button>

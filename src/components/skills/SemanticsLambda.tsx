@@ -20,7 +20,7 @@ const SemanticsLambda: React.FC<SemanticsLambdaProps> = ({variant}) => {
     );
     return (
         <OverlayTrigger trigger="click" placement="right" overlay={popover}>
-            <Button variant={variant} size="lg" block>プログラム意味論withラムダ計算</Button>
+            <Button variant={variant} size="lg" block>プログラム意味論 with ラムダ計算</Button>
         </OverlayTrigger>
     )
 }
