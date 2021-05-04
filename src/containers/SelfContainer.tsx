@@ -24,6 +24,7 @@ type StateProps = Readonly<{
               <h5>
                   I'm a 4th year student at Kyoto University.<br />
                   I'm majoring in electrical and electronic enginnering.<br/>
+                  I'm also a member of athletic club.
               </h5>
               <br />
               <h5>

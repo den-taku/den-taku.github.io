@@ -2,8 +2,8 @@ import React from 'react';
 import Icon from '../components/Icon'
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, Nav } from 'react-bootstrap';
 
 type StateProps = Readonly<{
     //
@@ -18,6 +18,18 @@ type StateProps = Readonly<{
   const TopContainer: React.FC<TopContainerProps> = ({})  => {
     return (
       <>
+      <Navbar bg="dark" variant="dark">
+        <Navbar.Brand href="#home">
+          <Nav variant="pills" defaultActiveKey="japanese">
+            <Nav.Item>
+              <Nav.Link href="english" disabled>English</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="japanese">日本語</Nav.Link>
+            </Nav.Item>
+          </Nav>
+        </Navbar.Brand>
+      </Navbar>
       <Row>
           <Col sm={5}>
               <Icon />
@@ -27,11 +39,6 @@ type StateProps = Readonly<{
               <h1> </h1>
               <h1>I'm DenTaku.</h1>
               <h5>Thanks for visiting!</h5>
-              <Col>
-                  <a href="https://twitter.com/o_loAol_o">Twitter  </a>
-                  <a href="https://github.com/den-taku">Github  </a>
-                  <a href="https://zenn.dev/dentaku">Zenn  </a>
-              </Col>
           </Col>
       </Row>
       </> 
