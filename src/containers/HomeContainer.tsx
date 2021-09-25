@@ -24,6 +24,7 @@ type StateProps = Readonly<{
                   <a href="https://twitter.com/o_loAol_o">・Twitter  </a><br />
                   <a href="https://github.com/den-taku">・Github  </a><br />
                   <a href="https://zenn.dev/dentaku">・Zenn  </a><br />
+                  <a href="https://atcoder.jp/users/dentaku">・AtCoder</a>
               </Col>
           </header>
         </div>

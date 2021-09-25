@@ -28,8 +28,7 @@ type StateProps = Readonly<{
                   <li>C++</li>
                   <li>OCaml</li>
                   <li>HTML / CSS</li>
-                  <li>JavaScript</li>
-                  <li>TypeScript</li>
+                  <li>JavaScript / TypeScript</li>
               </ul>
               <h5>たまに使う / 使ってた</h5>
               <ul>
